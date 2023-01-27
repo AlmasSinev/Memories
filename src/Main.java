@@ -3,6 +3,9 @@
 public class Main {
     public static void main(String[] args) {
 
+        System.out.printf("This is a format string %d", 123);
+
+
         System.out.println(add(10));
         System.out.println(add(10, 5));
         System.out.println(add(10, 5, 2));
