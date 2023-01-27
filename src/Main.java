@@ -1,13 +1,19 @@
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
-        String name = JOptionPane.showInputDialog("Enter your name:");
-        JOptionPane.showMessageDialog(null, "Hello "+name);
+        ArrayList<String> food = new ArrayList<>();
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter ypur height: "));
-        JOptionPane.showMessageDialog(null, "You are "+height+" cm tall");
+        food.add("pizza");
+        food.add("ramen");
+        food.add("sushi");
+
+        for (String f : food) {
+            System.out.println(f);
+        }
+
 
     }
 }
