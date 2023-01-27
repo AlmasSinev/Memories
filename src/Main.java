@@ -1,17 +1,13 @@
-import java.util.Scanner;
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        String name = JOptionPane.showInputDialog("Enter your name:");
+        JOptionPane.showMessageDialog(null, "Hello "+name);
 
-        System.out.println("What is your name ?");
-        String name = sc.nextLine();
-
-        System.out.println("How old are you?");
-        int age = sc.nextInt();
-
-        System.out.println("Hello " + name + "! Your age is " + age + ".");
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter ypur height: "));
+        JOptionPane.showMessageDialog(null, "You are "+height+" cm tall");
 
     }
 }
