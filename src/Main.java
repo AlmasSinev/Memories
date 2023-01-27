@@ -3,11 +3,16 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-        String name = JOptionPane.showInputDialog("Enter your name:");
-        JOptionPane.showMessageDialog(null, "Hello "+name);
+        String month = "May";
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter ypur height: "));
-        JOptionPane.showMessageDialog(null, "You are "+height+" cm tall");
+        switch (month) {
+            case "January" : System.out.println("1");
+            break;
+            case "February" : System.out.println("2");
+            break;
+            default: System.out.println("0");
+            break;
+        }
 
     }
 }
